@@ -127,6 +127,8 @@ config_package_add kmod-usb-storage
 config_package_add kmod-usb-ohci
 config_package_add kmod-usb-uhci
 config_package_add usb-modeswitch
+config_package_add kmod-usb-net-qmi-wwan
+config_package_add kmod-usb-wdm
 config_package_add sendat
 ## bbr
 config_package_add kmod-tcp-bbr
@@ -171,27 +173,27 @@ mv package/custom/golang feeds/packages/lang/
 ## Passwall
 config_package_add luci-app-passwall2
 config_package_add iptables-mod-socket
-config_package_add luci-app-passwall2_Iptables_Transparent_Proxy
-config_package_add luci-app-passwall2_INCLUDE_Hysteria
-config_package_del luci-app-passwall2_Nftables_Transparent_Proxy
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Server
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Client
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Server
-config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Client
-config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Server
-config_package_del luci-app-passwall2_INCLUDE_Trojan_Plus
-config_package_del luci-app-passwall2_INCLUDE_Simple_Obfs
-config_package_del luci-app-passwall2_INCLUDE_tuic_client
-config_package_del shadowsocks-libev-config
-config_package_del shadowsocks-libev-ss-local
-config_package_del shadowsocks-libev-ss-redir
-config_package_del shadowsocks-libev-ss-server
-config_package_del shadowsocksr-libev-ssr-local
-config_package_del shadowsocksr-libev-ssr-redir
-config_package_del shadowsocks-libev-ssr-server
-config_package_del shadowsocks-rust
-config_package_del simple-obfs
+## config_package_add luci-app-passwall2_Iptables_Transparent_Proxy
+## config_package_add luci-app-passwall2_INCLUDE_Hysteria
+## config_package_del luci-app-passwall2_Nftables_Transparent_Proxy
+## config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client
+## config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Server
+## config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Client
+## config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Server
+## config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Client
+## config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Server
+## config_package_del luci-app-passwall2_INCLUDE_Trojan_Plus
+## config_package_del luci-app-passwall2_INCLUDE_Simple_Obfs
+## config_package_del luci-app-passwall2_INCLUDE_tuic_client
+## config_package_del shadowsocks-libev-config
+## config_package_del shadowsocks-libev-ss-local
+## config_package_del shadowsocks-libev-ss-redir
+## config_package_del shadowsocks-libev-ss-server
+## config_package_del shadowsocksr-libev-ssr-local
+## config_package_del shadowsocksr-libev-ssr-redir
+## config_package_del shadowsocks-libev-ssr-server
+## config_package_del shadowsocks-rust
+## config_package_del simple-obfs
 rm -r package/custom/shadowsocks-rust
 rm -r package/custom/simple-obfs
 

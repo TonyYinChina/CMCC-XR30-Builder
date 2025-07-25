@@ -112,7 +112,7 @@ config_package_add luci-app-arpbind
 ## Wake on Lan
 config_package_add luci-app-wol
 ## QR Code Generator
-config_package_add qrencode
+## config_package_add qrencode
 ## Fish
 config_package_add fish
 ## Temporarily disable USB3.0
@@ -121,8 +121,8 @@ config_package_add luci-app-usb3disable
 config_package_add kmod-usb-net-huawei-cdc-ncm
 config_package_add kmod-usb-net-ipheth
 config_package_add kmod-usb-net-aqc111
-config_package_add kmod-usb-net-rtl8152-vendor
-config_package_add kmod-usb-net-sierrawireless
+## config_package_add kmod-usb-net-rtl8152-vendor
+## config_package_add kmod-usb-net-sierrawireless
 config_package_add kmod-usb-storage
 config_package_add kmod-usb-ohci
 config_package_add kmod-usb-uhci
@@ -158,8 +158,8 @@ config_package_add vim-full
 config_package_add iperf
 
 # MentoHust
-git clone https://github.com/sbwml/luci-app-mentohust package/mentohust
-config_package_add luci-app-mentohust
+## git clone https://github.com/sbwml/luci-app-mentohust package/mentohust
+## config_package_add luci-app-mentohust
 
 # Third-party packages
 mkdir -p package/custom
@@ -171,31 +171,31 @@ rm -rf feeds/packages/lang/golang
 mv package/custom/golang feeds/packages/lang/
 
 ## Passwall
-config_package_add luci-app-passwall2
-config_package_add iptables-mod-socket
-config_package_add luci-app-passwall2_Iptables_Transparent_Proxy
-config_package_add luci-app-passwall2_INCLUDE_Hysteria
-config_package_del luci-app-passwall2_Nftables_Transparent_Proxy
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Server
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Client
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Server
-config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Client
-config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Server
-config_package_del luci-app-passwall2_INCLUDE_Trojan_Plus
-config_package_del luci-app-passwall2_INCLUDE_Simple_Obfs
-config_package_del luci-app-passwall2_INCLUDE_tuic_client
-config_package_del shadowsocks-libev-config
-config_package_del shadowsocks-libev-ss-local
-config_package_del shadowsocks-libev-ss-redir
-config_package_del shadowsocks-libev-ss-server
-config_package_del shadowsocksr-libev-ssr-local
-config_package_del shadowsocksr-libev-ssr-redir
-config_package_del shadowsocks-libev-ssr-server
-config_package_del shadowsocks-rust
-config_package_del simple-obfs
-rm -r package/custom/shadowsocks-rust
-rm -r package/custom/simple-obfs
+## config_package_add luci-app-passwall2
+## config_package_add iptables-mod-socket
+## config_package_add luci-app-passwall2_Iptables_Transparent_Proxy
+## config_package_add luci-app-passwall2_INCLUDE_Hysteria
+## config_package_del luci-app-passwall2_Nftables_Transparent_Proxy
+## config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client
+## config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Server
+## config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Client
+## config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Server
+## config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Client
+## config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Server
+## config_package_del luci-app-passwall2_INCLUDE_Trojan_Plus
+## config_package_del luci-app-passwall2_INCLUDE_Simple_Obfs
+## config_package_del luci-app-passwall2_INCLUDE_tuic_client
+## config_package_del shadowsocks-libev-config
+## config_package_del shadowsocks-libev-ss-local
+## config_package_del shadowsocks-libev-ss-redir
+## config_package_del shadowsocks-libev-ss-server
+## config_package_del shadowsocksr-libev-ssr-local
+## config_package_del shadowsocksr-libev-ssr-redir
+## config_package_del shadowsocks-libev-ssr-server
+## config_package_del shadowsocks-rust
+## config_package_del simple-obfs
+## rm -r package/custom/shadowsocks-rust
+## rm -r package/custom/simple-obfs
 
 ## 定时任务。重启、关机、重启网络、释放内存、系统清理、网络共享、关闭网络、自动检测断网重连、MWAN3负载均衡检测重连、自定义脚本等10多个功能
 config_package_add luci-app-autotimeset
